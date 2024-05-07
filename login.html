@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color:#FFF8DC;
+        }
+
+        
+        .container {
+            width: 380px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color:#FFDAB9;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 100px;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        input[type="text"],
+        input[type="password"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 15px;
+            background-color: #088178;
+            color: #FFF8DC;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color:#FFF8DC;
+        }
+        img{
+            margin-left: 18%;
+            margin-top: -15%;
+            margin-bottom: -25%;
+            width: 250px;
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+       <div>
+        <ul id="navbar">
+            <li><a href="pagprincipal.html">home</a></li>
+            <li><a href="shop.html">shop</a></li>                                               
+            <li><a href="sobre.html">sobre</a></li>
+            <li><a href="contato.html">contato</a></li>
+            <li><a  class="active" href="login.html">login</a></li>
+            <li id="lg-bag"><a href="product.html"><i class="far fa-shopping-bag"></i></a></li>
+            <a href="#" id="close"><i class="far fa-times"></i></a>
+        </ul>
+    </div>
+</head>
+<body>
+    <div class="container">
+        <img src="./logo__1_-removebg-preview.png" alt="">
+        <h2>ReVeste Vintage</h2>
+        <form action="login.php" method="post">
+            <input type="text" name="username" placeholder="Nome de usuário" required>
+            <input type="password" name="password" placeholder="Senha" required>
+            <input type="submit" 
+            value="Login">
+        </form>
+    </div>
+ 
+</body>
+</html>
